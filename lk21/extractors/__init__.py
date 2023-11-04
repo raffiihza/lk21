@@ -19,7 +19,7 @@ class BaseExtractorError(Exception):
 
 
 requests_cache.install_cache(cache_name=os.path.expanduser(
-    '~/.lk21-requests-cache'), backend='sqlite', expire_after=90)
+    '/usr/src/app/.lk21-requests-cache'), backend='sqlite', expire_after=90)
 
 
 class BaseExtractor:
